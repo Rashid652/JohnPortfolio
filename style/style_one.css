@@ -1,0 +1,420 @@
+@import url(nullstyle.css);
+@import url(burger.css);
+
+:root {
+    --hr: 'Heebo-Regular';
+    --hm: 'Heebo-Medium';
+    --hbold: 'Heebo-Bold';
+    --hblack: 'Heebo-Black';
+}
+
+body {
+    font-family: var(--hr);
+}
+
+.header {
+    padding-top: 30px;
+}
+
+.header__nav {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.header__nav-list {
+    display: flex;
+    gap: 33px;
+    align-items: center;
+    margin-right: 60px;
+}
+
+.nav-list-link {
+    font-family: var(--hm);
+    font-size: 20px;
+    line-height: 29px;
+    color: #000000;
+}
+
+.nav-list-link::after {
+    content: '';
+    display: block;
+    width: 0%;
+    height: 2px;
+    transition: all 0.7s;
+}
+
+.nav-list-link:hover::after {
+    width: 100%;
+    height: 2px;
+    background: #FF6464;
+}
+
+.section__info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 140px;
+}
+
+.section__info-left {
+    display: flex;
+    flex-direction: column;
+    gap: 39px;
+}
+
+.bigtitle {
+    max-width: 506px;
+    width: 100%;
+}
+
+.info-left-title {
+    font-family: var(--hbold);
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 60px;
+    color: #21243D;
+}
+
+.post-title {
+    max-width: 497px;
+    width: 100%;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #21243D;
+}
+
+.btn {
+    font-size: 20px;
+    line-height: 29px;
+    font-family: var(--hm);
+    color: #FFFFFF;
+    background: #FF6464;
+    max-width: 210px;
+    width: 100%;
+    text-align: center;
+    padding: 13px 0;
+    border-radius: 2px;
+    transition: opacity 1s;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.john {
+    width: 100%;
+    object-fit: cover;
+}
+
+.sections__posts {
+    background: #EDF7FA;
+}
+
+.sp {
+    margin-top: 70px;
+    padding: 7px auto 40px auto !important;
+    padding-bottom: 30px;
+}
+
+.section__posts-up {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.recent {
+    font-size: 22px;
+    line-height: 60px;
+    color: #21243D;
+}
+
+.view {
+    font-size: 16px;
+    line-height: 24px;
+    color: #00A8CC;
+    transition: opacity 0.5s;
+}
+
+.view:hover {
+    opacity: 0.5;
+}
+
+.section__posts-down {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.down-card {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 10px rgba(187, 225, 250, 0.25);
+    border-radius: 4px;
+    width: 50%;
+    padding: 24px 21px 30px 23px;
+}
+
+.down-card-title {
+    max-width: 374px;
+    width: 100%;
+    font-family: var(--hbold);
+    font-size: 26px;
+    line-height: 38px;
+    color: #21243D;
+}
+
+.down-card-datainfo {
+    display: flex;
+    align-items: center;
+    margin: 17px 0 11px 0;
+}
+
+.textone,
+.texttwo {
+    font-size: 18px;
+    line-height: 26px;
+    color: #21243D;
+}
+
+.textone::after {
+    content: '|';
+    margin: 0 30px;
+}
+
+.biginfo {
+    font-size: 16px;
+    line-height: 24px;
+    color: #21243D;
+    max-width: 368px;
+    width: 100%;
+}
+
+.section__works {
+    padding: 15px 0 0 0;
+}
+
+.works__card-one {
+    display: flex;
+    margin-top: 20px;
+    gap: 20px;
+    align-items: center;
+    padding: 0 0 15px 0;
+    border-bottom: 1px solid #E0E0E0;
+}
+
+.works__card-one:nth-of-type(2) {
+    margin: 30px 0;
+}
+
+.card-img {
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+}
+
+.card-info-title {
+    font-size: 30px;
+    line-height: 44px;
+    font-family: var(--hbold);
+    color: #21243D;
+}
+
+.card-posttitle {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.achiev {
+    font-size: 18px;
+    font-family: var(--hblack);
+    color: #FFFFFF;
+    background: #142850;
+    border-radius: 16px;
+    padding: 5px 10px;
+}
+
+.achiev-name {
+    font-size: 20px;
+    line-height: 29px;
+    color: #8695A4;
+}
+
+.card-text {
+    font-size: 16px;
+    line-height: 24px;
+    width: 100%;
+    color: #21243D;
+}
+
+.main {
+    padding-bottom: 80px;
+}
+
+.footer {
+    padding: 50px 0 55px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.icons-list {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.icon {
+    transition: all 0.5s;
+}
+
+.icon:hover {
+    transform: rotate(360deg) scale(1.1);
+}
+
+.copyright {
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    color: #21243D;
+}
+
+@media (max-width:800px) {
+    .section__posts-down {
+        flex-direction: column;
+    }
+
+    .down-card {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .down-card-title,
+    .down-card-datainfo,
+    .biginfo {
+        text-align: center;
+    }
+}
+
+@media (max-width:720px) {
+    .section__info {
+        flex-direction: column;
+        align-items: center;
+        gap: 34px;
+    }
+
+    .section__info-left {
+        order: 1;
+        gap: 20px;
+    }
+
+    .section__info-right {
+        width: max-content;
+        order: -1;
+    }
+
+    .info-left-title,
+    .post-title {
+        text-align: center;
+    }
+
+    .btn {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width:600px) {
+    .container {
+        padding: auto 30px;
+    }
+
+    .works__card-one {
+        flex-direction: column;
+        align-items: unset;
+    }
+
+    .recent {
+        text-align: center;
+    }
+}
+
+@media (max-width:375px) {
+    .header__nav-list {
+        display: none;
+    }
+
+    .burger {
+        display: flex;
+    }
+
+    .section__info {
+        margin-top: 33px;
+    }
+
+    .view {
+        display: none;
+    }
+
+    .section__posts-up {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .down-card-title,
+    .down-card-datainfo,
+    .biginfo {
+        text-align: unset;
+    }
+
+    .down-card-title {
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+    .textone,
+    .texttwo {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .down-card {
+        display: flex;
+        justify-content: unset;
+        align-items: unset;
+    }
+
+    .card-img {
+        width: 100%;
+    }
+
+    .card-info-title {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .achiev {
+        font-size: 16px;
+    }
+
+    .card-text {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
